@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <h1 class="display-3">Posts</h1>
+  <hr>
+  <app-post-list *ngFor="let post of posts"
+  [postTitle] = "post.title"
+  [postContent]="post.content"
+  [dateCreation]="post.created_at"
+  [loveIts]="post.loveIts"
+  [created_at]="post.created_at"
+  ></app-post-list>
+</div>

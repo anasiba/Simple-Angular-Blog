@@ -1,0 +1,9 @@
+
+<div class="card xs-12 mb-2" [ngClass]="loveIts>0?'bg-light':'bg-warning'">
+  <div class="card-body">
+    <h5 class="card-title ">{{postTitle}}<span class="h6 float-right text-muted">{{created_at | date:'short'}}</span></h5>
+    <p class="card-text">{{postContent}}</p>
+    <a href="#" class="btn btn-primary mr-1" (click)="like()">Love</a>
+    <a href="#" class="btn btn-danger" (click)="disLike()">Don't love</a>
+  </div>
+</div>
